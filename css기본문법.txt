@@ -25,3 +25,16 @@ HSL(Hue, Saturation, Lightness)
             color: hsl(240, 100%, 50%);
         }
     </style>
+
+[CSS로 지정하는 길이의 단위]
+CSS에서 지정하는 길이 값의 단위는 문서 매체의 종류(인쇄물/모니터)에 따라 달라짐.
+- 인쇄용 : 절대값과 관련된 단위 'in(인치), cm, mm, pt(포인트), pc(파이카)'
+- 모니터, 스크린용 : 'em, ex, px, %'등의 상대값. 웹작업에서는 상대값이 효과적.
+HTML5에서는 'rem과 ch'가 추가되었고, 뷰포트(viewport)의 백분율 길이인 'vw, vh, vmin, vmax'가 추가됨.
+
+em : em 단위가 쓰여진 곳의 폰트 사이즈 배수
+ex) css_02.html에서
+    body의 font-size가 16px일 경우, p의 font-size를 16px로 하고 싶으면 1em이라고 적으면 됨.
+    h1의 font-size를 20px로 하고싶으면, 1.25em이라고 하면 됨
+    p태그의 font-size가 1em(16px)일 경우, span태그의 font-size를 0.8em으로 하면 12.8px이 되고,
+    p태그의 font-size를 1.5em(24px)으로 변경하고 span태그의 font-size가 0.8em일 경우 span태그의 font-size는 19.2px이 됨
